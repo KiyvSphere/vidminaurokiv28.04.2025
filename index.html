@@ -15,7 +15,7 @@
             background-color: white;
             padding: 20px;
             margin: 20px auto;
-            width: 50%; /* Уменьшена ширина для більшої довжини тексту */
+            width: 80%; /* Увеличена ширина для более широкой пластинки */
             max-width: 1200px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -37,6 +37,17 @@
             font-size: 1.2em;
             line-height: 1.6;
             color: #555;
+        }
+        @media (max-width: 768px) {
+            .content {
+                width: 95%; /* Ширина пластинки для мобильных устройств */
+            }
+            h1 {
+                font-size: 2em; /* Размер шрифта для мобильных устройств */
+            }
+            .text {
+                font-size: 1em; /* Уменьшение шрифта для мобильных устройств */
+            }
         }
     </style>
 </head>
