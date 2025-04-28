@@ -7,10 +7,35 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa; /* Голубоватый фон */
+            background-color: #e0f7fa;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+        }
+        .header, .footer {
+            width: 100%;
+            background-color: white;
+        }
+        .header {
+            padding: 10px 20px;
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 2px solid white; /* Линия осталась, но теперь белая */
+        }
+        .footer {
+            padding: 10px 20px;
+            margin-top: 0;
+            text-align: left;
+            border-top: 2px solid white; /* Линия осталась, но теперь белая */
+        }
+        .header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: red;
+        }
+        .footer .left {
+            color: gray;
+            font-size: 0.9em;
         }
         .content {
             background-color: white;
@@ -52,32 +77,6 @@
             .text {
                 font-size: 1em;
             }
-        }
-
-        /* Стили шапки и подвала */
-        .header {
-            width: 100%;
-            background-color: white;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            padding: 10px 20px;
-        }
-        .footer {
-            width: 100%;
-            background-color: white;
-            padding: 10px 20px;
-            margin-top: 0;
-            text-align: left; /* Текст подвала слева */
-        }
-        .header .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: red;
-        }
-        .footer .left {
-            color: gray;
-            font-size: 0.9em;
         }
     </style>
 </head>
