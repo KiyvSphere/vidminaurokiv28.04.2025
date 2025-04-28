@@ -14,7 +14,7 @@
         .content {
             background-color: white;
             padding: 20px;
-            margin: 20px auto;
+            margin: 0 auto;
             width: 90%; /* Ширина пластинки 90% */
             max-width: 800px; /* Максимальная ширина пластинки */
             border-radius: 8px;
@@ -52,22 +52,20 @@
 
         /* Стили для шапки и подвала */
         .header, .footer {
-            width: 90%; /* Ширина шапки и подвала такая же как у контента */
+            width: 100%; /* Сделаем ширину шапки и подвала 100% */
             background-color: white;
-            height: 60px; /* Увеличена высота полосок */
+            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
-            margin: 0 auto;
-        }
-        .header {
-            border-bottom: 2px solid #ccc;
+            border-bottom: 2px solid #ccc; /* Добавим разделительную линию */
         }
         .footer {
             border-top: 2px solid #ccc;
             font-size: 0.9em;
             padding: 5px 20px;
+            margin-top: 20px;
         }
         .header .logo {
             font-size: 1.8em;
@@ -122,6 +120,9 @@
         <!-- Фото музея перед последним абзацем -->
         <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9.jpg" alt="Фото музею">
 
+        <p class="text">
+            Під час відміни уроків школярі можуть скористатися нагодою для відвідування місць, пов'язаних з історією та пам'яттю про Чорнобильську катастрофу, що дозволить їм краще усвідомити важливість екологічної безпеки для майбутніх поколінь.
+        </p>
     </div>
 
     <!-- Подвал (с серым текстом KiyvSphere 2024-2025 слева и зворотній зв'язок справа) -->
