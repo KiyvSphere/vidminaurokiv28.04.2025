@@ -66,17 +66,22 @@
             line-height: 1.6;
             color: #555;
         }
+
+        /* Реклама на фоне */
         .advertisement {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://github.com/KiyvSphere/vidminaurokiv28.04.2025/blob/main/images/835%D1%85502.png?raw=true');
-            background-size: cover;
-            background-position: center;
             z-index: -1;
         }
+        .advertisement img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
         @media (max-width: 768px) {
             .content {
                 width: 90%;
@@ -117,7 +122,7 @@
         <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9.jpg" alt="Фото музею">
 
         <p class="text">
-            Учні цього дня зможуть відвідати різноманітні музеї, меморіальні комплекси та виставки, присвячені Чорнобильській катастрофі. Це дозволить їм краще зрозуміти значення цієї трагедії для нашої історії та отримати нові знання про наслідки катастрофи.
+            Учні цього дня зможуть відвідати різноманітні музеї, меморіальні комплекси та виставки, присвячені Чорнобильській катастрофі. Це дозволить їм краще зруміти значення цієї трагедії для нашої історії та отримати нові знання про наслідки катастрофи.
         </p>
 
         <p class="text">
@@ -135,7 +140,9 @@
 
     <!-- Реклама на фоне с ссылкой -->
     <a href="https://rozetka.com.ua/" target="_blank">
-        <div class="advertisement"></div>
+        <div class="advertisement">
+            <img src="https://github.com/KiyvSphere/vidminaurokiv28.04.2025/blob/main/images/835%D1%85502.png?raw=true" alt="Реклама Rozetka">
+        </div>
     </a>
 
 </body>
