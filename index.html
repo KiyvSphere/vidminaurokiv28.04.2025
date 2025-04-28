@@ -58,34 +58,33 @@
         .header, .footer {
             width: 100%;
             background-color: white;
-            height: 60px;
+            height: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
-            border-bottom: 2px solid #ccc;
+            padding: 10px 20px;
+            flex-direction: column; /* Для футера — текст в столбик */
         }
         .footer {
-            border-top: 2px solid #ccc;
             font-size: 0.9em;
-            padding: 5px 30px; /* Уменьшено отступ справа */
-            margin-top: 0; /* Убираем отступ сверху, чтобы подвал прижимался к пластине */
+            padding: 10px 20px;
+            margin-top: 0;
         }
         .header .logo {
             font-size: 1.8em;
             font-weight: bold;
             color: red;
-            padding-left: 10px; /* Добавлено отступ слева для шапки */
+            align-self: flex-start;
         }
         .footer .left {
             color: gray;
-            padding-left: 0px; /* Добавлено отступ слева для подвала */
+            text-align: left;
         }
     </style>
 </head>
 <body>
 
-    <!-- Шапка (с красным текстом KIYVSPHERE слева, без текста справа) -->
+    <!-- Шапка -->
     <div class="header">
         <div class="logo">KIYVSPHERE</div>
     </div>
@@ -105,23 +104,26 @@
         </p>
         
         <!-- Фото учителя -->
-       <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9.jpg" alt="Фото музею">
+        <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%A3%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C.jpg" alt="Фото вчителя">
         
         <p class="text">
             Учні цього дня зможуть відвідати різноманітні музеї, меморіальні комплекси та виставки, присвячені Чорнобильській катастрофі. Це дозволить їм краще зрозуміти значення цієї трагедії для нашої історії та отримати нові знання про наслідки катастрофи.
         </p>
-        
+
         <!-- Фото музея перед последним абзацем -->
+        <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9.jpg" alt="Фото музею">
 
         <p class="text">
-            Це чудова можливість для учнів не тільки відпочити від уроків, але й більше дізнатися про важливі історичні події. Відвідування таких місць дозволяє краще зрозуміти масштаби катастрофи і її вплив на наше життя.
+            Це чудова можливість для учнів не тільки відпочити від уроків, але й більше дізнатися про важливі історичні події. Відвідування таких місць дозволяє краще зрозуміти масштаби катастрофи і її вплив на наше життя. Це також шанс подивитися на світ через призму історії, що робить цей день ще більш захоплюючим та пізнавальним.
         </p>
     </div>
 
-    <!-- Подвал (с серым текстом KiyvSphere 2024-2025 слева и зворотній зв'язок справа) -->
+    <!-- Подвал -->
     <div class="footer">
-        <div class="left">KiyvSphere 2024-2025
-                          Зворотній зв'язок: kiyvsphere@gmail.com</div>
+        <div class="left">
+            KiyvSphere 2024-2025<br>
+            Зворотній зв'язок: kiyvsphere@gmail.com
+        </div>
     </div>
 
 </body>
