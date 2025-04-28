@@ -49,19 +49,49 @@
                 font-size: 1em;
             }
         }
+
         /* Стили для шапки и подвала */
         .header, .footer {
             width: 100%;
             background-color: white;
-            height: 10px;
-            margin: 0;
+            height: 60px; /* Увеличена высота полосок */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .header {
+            border-bottom: 2px solid #ccc;
+        }
+        .footer {
+            border-top: 2px solid #ccc;
+            font-size: 0.9em;
+            padding: 5px 20px;
+        }
+        .header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: red;
+        }
+        .header .nav {
+            font-size: 1.2em;
+            color: black;
+        }
+        .footer .left {
+            color: gray;
+        }
+        .footer .right {
+            color: gray;
         }
     </style>
 </head>
 <body>
 
-    <!-- Шапка (Белая линия вверху) -->
-    <div class="header"></div>
+    <!-- Шапка (с красным текстом KIYVSPHERE слева, черным Головна справа) -->
+    <div class="header">
+        <div class="logo">KIYVSPHERE</div>
+        <div class="nav">Головна</div>
+    </div>
 
     <div class="content">
         <h1>Відміна уроків в Києві та Київській області 28.04.2025: Що відомо</h1>
@@ -90,14 +120,14 @@
         
         <!-- Фото музея перед последним абзацем -->
         <img src="https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9.jpg" alt="Фото музею">
-        
-        <p class="text">
-            Це також хороший момент, щоб нагадати молодому поколінню про важливість захисту навколишнього середовища та екологічної безпеки. Вшанування пам'яті жертв Чорнобиля дозволяє нам усвідомити, наскільки важливо берегти нашу природу.
-        </p>
+
     </div>
 
-    <!-- Подвал (Белая линия внизу) -->
-    <div class="footer"></div>
+    <!-- Подвал (с серым текстом KiyvSphere 2024-2025 слева и зворотній зв'язок справа) -->
+    <div class="footer">
+        <div class="left">KiyvSphere 2024-2025</div>
+        <div class="right">Зворотній зв'язок: kiyvsphere@gmail.com</div>
+    </div>
 
 </body>
 </html>
