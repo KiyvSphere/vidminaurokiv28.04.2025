@@ -12,6 +12,18 @@
             padding: 0;
             overflow-x: hidden;
         }
+        /* Установка фона */
+        .background-ad {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://raw.githubusercontent.com/KiyvSphere/vidminaurokiv28.04.2025/main/images/835%D1%85502.png');
+            background-size: cover;
+            background-position: center;
+            z-index: -1; /* Помещаем фон за контент */
+        }
         .header, .footer {
             width: 100%;
             background-color: white;
@@ -20,13 +32,13 @@
             padding: 10px 20px;
             display: flex;
             align-items: flex-start;
-            border-bottom: 2px solid #ccc; /* Серая линия */
+            border-bottom: 2px solid #ccc;
         }
         .footer {
             padding: 10px 20px;
             margin-top: 0;
             text-align: left;
-            border-top: 2px solid #ccc; /* Серая линия */
+            border-top: 2px solid #ccc;
         }
         .header .logo {
             font-size: 1.8em;
@@ -81,6 +93,11 @@
     </style>
 </head>
 <body>
+
+    <!-- Реклама на фоне -->
+    <a href="https://rozetka.com.ua" target="_blank">
+        <div class="background-ad"></div>
+    </a>
 
     <!-- Шапка -->
     <div class="header">
